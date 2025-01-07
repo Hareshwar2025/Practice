@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-content>  
+        <h1>{{panelName}}</h1>
+    </mat-card-content>
+</mat-card>
+
+<mat-nav-list>
+    <li *ngFor="let items of navItems">
+        <a mat-list-item routerLink="/{{items.link}}" routerLinkActive="active-link">{{items.value}}</a>
+    </li>
+</mat-nav-list>

@@ -1,0 +1,54 @@
+:host{
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+
+}
+
+.library-info {
+    width: 400px;
+    padding: 1rem;
+}
+
+
+.register-form {
+    width: 400px;
+
+}
+
+.library-info mat-list-item {
+    height: auto;
+}
+
+.library-info mat-list-item p {
+    white-space: normal;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+
+mat-card mat-grid-tile mat-form-field {
+    width: 100%; 
+}
+
+
+mat-card mat-card-header {
+    justify-content: center; 
+    display: flex;
+}
+
+
+mat-card mat-card-header mat-card-title {
+    font-size: 2rem;
+}
+
+mat-card-actions button {
+    margin: auto;
+    width: 80%;
+}
+mat-card-actions h4 {
+    margin: 0;
+    padding-right: 1rem;
+}

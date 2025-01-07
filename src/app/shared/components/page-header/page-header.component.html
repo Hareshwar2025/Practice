@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <span>Library Management System</span>
+    <span class="spacer" style="flex: 1 1 auto;"></span>
+    <div class="user-info" style="display: flex;align-items: center;">
+    <div class="name" *ngIf="loggedIn">Hi, {{name}}</div>
+    <button style="margin-left: 1.5rem;" mat-raised-button color="accent" routerLink="/profile">Profie</button>
+    <button style="margin-left: 1.5rem;" mat-raised-button color="warn" (click)="logout()">Log Out</button>
+    </div>
+
+</mat-toolbar>

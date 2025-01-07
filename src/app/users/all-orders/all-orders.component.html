@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-content>
+        <h1>Orders With Pending Returns (1)</h1>
+        <button mat-raised-button color="accent" (click)="sendEmail()">
+            Send Email About Pending Returns
+        </button>
+        <button mat-raised-button color="accent" (click)="blockUsers()">
+            Block Overdue Users
+        </button>
+    </mat-card-content>
+    <mat-card-footer>
+        <mat-progress-bar *ngIf="showProgressBar" mode="indeterminate" color="accent"></mat-progress-bar>
+    </mat-card-footer>
+</mat-card>
+
+
+<app-page-table [columns]="columnsForPendingReturns" [dataSource]="ordersWithPendingReturns"></app-page-table>
+
+<mat-card>
+    <mat-card-content>
+        <h1>Order With Completed Returns</h1>
+    </mat-card-content>
+</mat-card>
+
+<app-page-table [columns]="columnsForCompletedReturns" [dataSource]="ordersWithCompletedReturns"></app-page-table>
+
